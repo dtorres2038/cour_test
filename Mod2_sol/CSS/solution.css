@@ -1,99 +1,102 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
   }
 
   h1 {
     text-align: center;
   }
 
-  div {
-    border: solid;
-    background-color: lightslategrey;
+  body {
+    margin:0;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+
+
+  #cont {
     padding: 0px;
-    margin: 10px;
+    border: 0px;
     position: relative;
     float: left;
-    box-sizing: border-box;
+    overflow: hidden;
   }
 
-  p {
-    clear: right ;
+  .texto {
+    clear: both;
     padding: 10px;
-    box-sizing: border-box;
   }
 
-  #mt1 {
-    text-align: center;
-    box-sizing: border-box;
-    float: right;
+  .item {
     border: solid;
-    width: 100px;
-    background-color: blueviolet;
+    float: left;
+    margin-top: 10px;
+    margin-left: 30px;
+    height: 180px;
+    background-color: rgb(134, 168, 202);
+    overflow: hidden;
+    white-space: inherit;
+  }
+
+  .box {
+    text-align: center;
+    float: right;
+    border:solid;
+    border-top: 0px;
+    border-right: 0px;
+    width: 200px;
     padding: 0px;
     margin: 0px;
+    margin-top: 0;
+    margin-left: 0;
+    position: relative;
+
   }
 
-  #mt2 {
-    text-align: center;
-    box-sizing: border-box;
-    float: right;
-    border: solid;
-    width: 100px;
+  
+  .mt1 {   
+    background-color: rgb(203, 55, 233);
+  }
+
+  .mt2 {
     background-color: goldenrod;
-    padding: 0px;
-    margin: 0px;
   }
 
-  #mt3 {
-    text-align: center;
-    box-sizing: border-box;
-    float: right;
-    border: solid;
-    width: 100px;
+  .mt3 {
     background-color: greenyellow;
-    padding: 0px;
-    margin: 0px;
   }
+  
 
-  #sq1 {
-    width: 300px;
-  }
-  #sq2 {
-    width: 300px;
-  }
-  #sq3 {
-    width: 300px;
+  .sq1 .sq2 .sq3 {
+    height: 200px;
   }
 
 
   /*Large devices*/
-  @media  (min-width: 992px) {
-  #sq1 {
-    width: 30%;
-  }
-
-  #sq2 {
-    width: 30%;
-  }
-
-  #sq3 {
-    width: 30%;
-  }
+  @media  ( min-width: 992px ) {
+    .sq1, .sq2, .sq3  {
+      width: 30%;
+    }
 
   }
 
   /*Medium devices*/
   @media ( min-width: 768px ) and ( max-width: 991px ) {
-      #sq1 {
-      width: 40%;
+    .sq1, .sq2  {
+      width: 43%;
     }
 
-    #sq2 {
-      width: 40%;
+    .sq3  {
+      width: 90%;
     }
 
-    #sq3 {
-      width: 84%;
+  }
+
+  /*Mobile devices*/
+  @media ( max-width: 767px ) {
+    .sq1, .sq2, .sq3 {
+      width: 90%;
     }
 
   }
