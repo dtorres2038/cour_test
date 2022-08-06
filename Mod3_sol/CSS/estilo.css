@@ -1,0 +1,25 @@
+.plato {
+    background-color: beige;
+}
+
+.menu1 {
+    background-color: aliceblue;
+    text-align: center;
+    padding: 1opx;
+
+    font-size: 1.4em;
+
+
+}
+
+a:link,
+a:visited {
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    background-color: lightgrey;
+}
